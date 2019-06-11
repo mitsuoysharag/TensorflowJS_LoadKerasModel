@@ -8,6 +8,10 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get('/', function (req, res) {
+  res.send('Hola Mundo');
+});
+
 app.get('/model.json', function (req, res) {
   res.send(model);
 });
